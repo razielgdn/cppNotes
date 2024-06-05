@@ -1,7 +1,7 @@
 # include <iostream>
 
 int sum(int a, int b);
-
+void substract (int x, int y, int *result);
 
 int main( void )
 {
@@ -17,7 +17,9 @@ int main( void )
     int sumData;
     sumData = sum(x, y);
     cout << "The result of the sum of " << x <<  " and " << y << " is: " << sumData << "\n"; 
-
+    int rest;
+    substract(x, y, &rest);
+    cout << "The result of substract " << x <<  " and " << y << " is: " << rest << endl; 
     return 0;
 }
 
@@ -26,4 +28,8 @@ int sum( int a , int b)
     int result = 0;
     result = a + b;
     return result;
+}
+
+void substract(int a, int b,  int *result){
+    *result = a - b;
 }
