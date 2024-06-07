@@ -69,21 +69,23 @@
     - memory requirements may change eith platform
 
 # Datatype Size
-- **One byte**: 
-    - bool
-    - char
-- **Two bytes**:
+- **1 byte**: 
+    - bool 
+    - char 
+- **2 bytes**:
     - wchart_t
     - short
-- **Four bytes**
+- **4 bytes**
     - int
     - long
     - float
-- **Eight bytes**
+- **8 bytes**
     - long long
     - double
     - long double
-    
+## climits ( limits.h)    
+Provides a list of MACROS with the definition of the limits of the primitive variable types. 
+
 
 # Uniform initialization 
 - C++98 provided different ways to initialize types
@@ -92,3 +94,6 @@
 - C++11 introduced uniform initialization
     - Use {} to initialize all types
 
+# Functions
+In C/C++ programs the functions are sections of code with limited instructions and can return a value, Functions behavior are similar to 
+the mathematics definition. 
