@@ -48,3 +48,51 @@ Macros are used in conditional compilation.
 #endif
 ```
 
+# Namespaces
+Namespaces[^1] in C++ are used to organize code into logical groups and to prevent name conflicts that can occur especially when your code base includes multiple libraries. They allow you to group related functions, classes, variables, and other identifiers under a single name, thereby creating a scope.
+- Use the scope resolution operator :: to access members of a namespace.
+Example of a namespace:
+```C++
+#include <iostream>
+
+namespace MathFunctions {
+    
+    int add(int a, int b) {
+        return a + b;
+    }
+    int subtract(int a, int b) {
+        return a - b;
+    }
+}
+
+namespace DisplayFunctions {
+    void printSum(int a, int b) {
+        std::cout << "Sum: " << (a + b) << std::endl;
+    }
+
+    void printDifference(int a, int b) {
+        std::cout << "Difference: " << (a - b) << std::endl;
+    }
+}
+
+int main() {
+    using namespace MathFunctions; // Bring all identifiers from MathFunctions into scope
+    using DisplayFunctions::printSum; // Bring only printSum from DisplayFunctions into scope
+
+    int x = 10;
+    int y = 5;
+
+    int sum = add(x, y); // No need for MathFunctions::
+    int difference = subtract(x, y); // No need for MathFunctions::
+
+    printSum(x, y); // No need for DisplayFunctions::
+    // Need to use full scope for printDifference
+    DisplayFunctions::printDifference(x, y);
+
+    std::cout << "Sum using MathFunctions: " << sum << std::endl;
+    std::cout << "Difference using MathFunctions: " << difference << std::endl;
+
+    return 0;
+}
+```
+[^1]: This content was created with chatgpt.com. I was tired to write it from myself.  
