@@ -21,7 +21,7 @@ const  int *const const_ptr = &MAX_SIZE;
 # C++ begin and end functions
 Using c++ functions begin() initializes a pointer to the first element of an array, vector, and other objects.   
 The end()  function returns the last element of a object.   
-In for cicles it is useful to create 
+In for cycles it is useful to create 
  ```C++
 int array[]={2, 24, 65, 8, 92,57}
 int *firs = std::begin(array);

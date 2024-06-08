@@ -6,8 +6,8 @@ int main (){
    using namespace std;
    const float PI=3.1416;
    float radius = 0;
-   cout << "Next program calulates cicle diameter and area:" << endl;
-   cout << "Indroduce radious:  ";
+   cout << "Next program calculates cycle diameter and area:" << endl;
+   cout << "Introduce radius:  ";
    cin >> radius;
    //cout << endl;
    float circumference = PI*radius*2;
@@ -17,7 +17,7 @@ int main (){
    int x = 23;
    const int *const ptr = &x;
    int *ptr2 = NULL;
-   cout << "pointer ptr addres: " << ptr << endl;
+   cout << "pointer ptr address: " << ptr << endl;
    cout << "pointer ptr value: " << *ptr << endl;
    // cout << endl;
    Print(&x);

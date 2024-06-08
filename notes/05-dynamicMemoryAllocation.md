@@ -1,6 +1,6 @@
 # Memory management
 - C/C++ programs are provided with different types of memory areas
-  - stack: allocated autmatically for local variables.
+  - stack: allocated automatically for local variables.
   - data section: allocated for global and static data.
   - heap: allocated at runtime. 
 
@@ -10,14 +10,14 @@
   
 
 # Dinamic memory allocation in C
- C provides varios functions for allocatin memory from the heap.
+ C provides various functions for allocating memory from the heap.
    - malloc: allocate raw memory on the heap. 
    - calloc: allocate memory on the heap an initializes it to zero.
    - ralloc: allocates larger chunk of memory for an existing allocation.
    - free:   deallocates/releases the memory allocated through the above functions.
 
 ## Usage
-standar library should be added: ``` #include <stdlib.h>``` 
+standard library should be added: ``` #include <stdlib.h>``` 
 - In the case of malloc:
 ``` C++ 
 #define ELEMENTS_NUMBER 1
@@ -40,7 +40,7 @@ if(p==NULL){
 free(p); 
 ```
 # Dynamic memory allocation in C++
-C++ provides two operatior for dynamic memory allocation:
+C++ provides two operator for dynamic memory allocation:
 - **new**: allocates memory on the heap.
 - **delete**: deallocates memory. 
 - Memory that is allocated through *new* has to be released with *delete*. 
@@ -51,7 +51,7 @@ C++ provides two operatior for dynamic memory allocation:
 - Written as new[]
 - Subsequently, use delete [] for releasing the memory
 ```
-<type> *<variable> = new <type> [rize];
+<type> *<variable> = new <type> [size];
 delete [] <variable>;
 ```
 ## Usage
@@ -74,7 +74,7 @@ int *p = new int[5]; //Allocate memory for 5 integers
 p[0] = 23;
 delete []p;
 ```
-Reserve memory for multidimentional array example:
+Reserve memory for multidimensional array example:
 
 ```c++
 int *p1 = new int [3];

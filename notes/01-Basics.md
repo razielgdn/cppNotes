@@ -6,9 +6,9 @@
 
 # New Features
 - R value references
-- Move samntics
-- Non- static data member initializars
-- Initialializer lists
+- Move semantics
+- Non- static data member initializers
+- Initializer lists
 - Delegating constructors
 - Automatic type inference
 - Null pointer constant
@@ -27,15 +27,15 @@
 - Encompasses features of C++
 - Move semantics
 - Smart pointers
-- Auitomatic type inference
+- Automatic type inference
 - Threading
 - Lambda functions
 
 # Why is C++ used
-- Used for perfonance, stability & portability
-- Available on almos all operating systems
+- Used for performance, stability & portability
+- Available on almost all operating systems
 - No dependency on separate runtime
-- Smaller memory foodprint
+- Smaller memory footprint
 - Can run in constrained environment
 - Standard C++ code can be easily ported to multiple platforms
 
@@ -61,12 +61,12 @@
 # Modifiers
 - Keywords to extend or change behavior of primitive types
    - signed, unsigned, short, long
-- All types can be quialified with quialifiers
+- All types can be qualified with qualifiers
     - const
     - static
     - volatile
 - All types occupy memory and can hold a range of values
-    - memory requirements may change eith platform
+    - memory requirements may change platform
 
 # Datatype Size
 - **1 byte**: 
