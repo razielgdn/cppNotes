@@ -1,7 +1,9 @@
 #include <iostream>
-#include "headers/products.h"
+#include "Car.h"
 
 int main(){
-
+	//Car c(5);
+   Car c;
+	c.Dashboard();	
    return 0;
 }
